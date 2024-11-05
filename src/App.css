@@ -1,91 +1,115 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 @import "primereact/resources/themes/lara-light-indigo/theme.css";
 @import "primereact/resources/primereact.min.css";                 
 @import "primeicons/primeicons.css";
 @import 'bootstrap/dist/css/bootstrap.css';
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
 
-body{
-  background-color: #f9f9f9;
+body {
+  background-color: #f3f4f6;
+  color: #333;
 }
 
-.users-page h1{
+.users-page h1, .users-page h3 {
   margin: 20px auto;
   text-align: center;
+  color: #2c3e50;
+  font-weight: 500;
 }
 
-.users-page h3{
-  margin: 20px auto;
-  text-align: center;
-}
-
-.users-page .users-list{
+.users-page .users-list {
   background-color: #fff;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  padding: 25px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
   margin: 30px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
-.users-page .users-list table .btn{
+.users-page .users-list table .btn {
   margin: 0 5px;
+  border-radius: 20px;
+  padding: 8px 15px;
 }
 
-.users-page .addNewUser{
+.users-page .addNewUser {
   text-align: right;
   margin-bottom: 20px;
 }
 
-.users-page .addNewUser .btn i{
-  padding: 0 10px;
+.users-page .addNewUser .btn {
+  display: flex;
+  align-items: center;
+  padding: 8px 15px;
+  background-color: #5c6bc0;
+  color: #fff;
+  border-radius: 20px;
 }
 
-.user-view h1{
+.users-page .addNewUser .btn i {
+  padding-right: 10px;
+}
+
+.user-view h1 {
   margin: 0;
   margin-bottom: 20px;
-  color:#333;
-  font-size: 22px;
+  color: #2c3e50;
+  font-size: 24px;
   font-weight: bold;
 }
 
-.user-view .box{
+.user-view .box {
   padding: 30px;
   margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
 }
 
-.user-view p{
+.user-view p {
   padding-bottom: 12px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #eaeaea;
   margin-bottom: 10px;
 }
 
-.user-view p span{
+.user-view p span {
   display: inline-block;
   min-width: 130px;
 }
 
-.user-view p span:first-child{
-  color:#6c757d;
+.user-view p span:first-child {
+  color: #6c757d;
+  font-weight: 500;
 }
 
-.user-view p span:last-child{
-  color:#333;
+.user-view p span:last-child {
+  color: #333;
   font-weight: bold;
 }
 
-._add-view p{
+._add-view p {
   border-bottom: none;
 }
 
-._add-view p input{
+._add-view p input {
   margin: 5px 0;
   font-size: 14px;
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+._add-view p input:focus {
+  border-color: #5c6bc0;
+  outline: none;
+  box-shadow: 0 0 5px rgba(92, 107, 192, 0.3);
 }
